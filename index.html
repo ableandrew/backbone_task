@@ -9,18 +9,6 @@
 </head>
 <body>
 
-<script type="text/template" id="item-template">
-        <div class="tableTR">
-            <div class="tableTD"><%- date %></div>
-            <div class="tableTD"><%- orderId %></div>
-            <div class="tableTD">
-                <div class="<%- sprite %>" ></div>
-                <span><%- state %></span>
-            </div><br>
-            <div class="spriteOpenOrder"></div>
-        </div>
-</script>
-
 
 <script data-main="js/main" src="node_modules/requirejs/require.js"></script>
 
@@ -58,6 +46,7 @@
             </div><br>
         </div>
     </div>
+    <div id="orders"></div>
 </div>
 
 

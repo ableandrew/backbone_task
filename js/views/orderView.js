@@ -7,12 +7,19 @@ define (
             tagName: 'div',
             template: _.template(orderTemplate),  //$('#item-template').html()
 
+            events: {
+                "click #redStatus": "canceled",
+                "click #greenStatus": "completed",
+                "click #greyStatus": "current",
+                "click #all": "all"
+            },
+
             initialize: function() {
             },
 
             render: function () {
                 this.$el.html(this.template(this.model.toJSON()));
-                 return this;
+                return this;
             }
         });
 

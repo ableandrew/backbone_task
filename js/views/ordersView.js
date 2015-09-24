@@ -3,8 +3,8 @@ define (
     function($,_,Backbone, OrderList, OrderView) {
         var app = app || {};
         app.OrdersView = Backbone.View.extend({
-            el: '#order',
-            template: _.template($('#item-template').html()),
+            el: '#orders',
+
 
             initialize: function () {
                 this.render();
@@ -15,7 +15,6 @@ define (
                     var orderView = new OrderView({model: order});
                     this.$el.append(orderView.render().el);
                 }, this);
-
                 return this;
             }
 
