@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Backbone.js</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+
+<script type="text/template" id="item-template">
+        <div class="tableTR">
+            <div class="tableTD"><%- date %></div>
+            <div class="tableTD"><%- orderId %></div>
+            <div class="tableTD">
+                <div class="<%- sprite %>" ></div>
+                <span><%- state %></span>
+            </div><br>
+            <div class="spriteOpenOrder"></div>
+        </div>
+</script>
+
+
+<script data-main="js/main" src="node_modules/requirejs/require.js"></script>
+
+
+
+<div id="wrapper">
+
+    <nav id="topMenu">
+        <ul class="listMenu">
+            <li id="all">
+                <a class="topMenuA" href="#" style="border-bottom: 0; color:black">Все заказы</a>
+            </li>
+            <li id="greyStatus">
+                <a class="topMenuA" href="#">Текущие</a>
+            </li>
+            <li id="greenStatus">
+                <a class="topMenuA" href="#">Завершенные</a>
+            </li>
+            <li id="redStatus">
+                <a class="topMenuA" href="#">Отмененные</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="order">
+        <div class="tableTR">
+            <div class="tableTD">
+                <b>Дата заказа</b>
+                <div class="spriteDownArrow"></div>
+            </div>
+            <div class="tableTD">
+                <b>№ заказа</b>
+            </div>
+            <div class="tableTD">
+                <b>Текущий статус</b>
+            </div><br>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<div class="tableTR">
+        <div class="tableTD"><%- date %></div>
+        <div class="tableTD"><%- orderId %></div>
+        <div class="tableTD">
+            <div class="<%- sprite %>" ></div>
+            <span><%- state %></span>
+        </div><br>
+    <div class="spriteOpenOrder"></div>
+</div>
+
+<div id="2" style="display: none">
+    <div class="information">
+        <div class="customerInformation">Имя получателя:</div>
+        <div><%- name %></div>
+        <div class="customerInformation">Номер телефона:</div>
+        <div><%- mobile %></div>
+        <div class="customerInformation">Доставка:</div>
+        <div><%- delivery %></div>
+        <div class="customerInformation">Оплата:</div>
+        <div><%- payment %></div>
+    </div>
+
+    <div class="ordersTitle">
+        <div class="ordersList">
+            <b>Товары в заказе</b>
+        </div>
+        <div class="ordersList">
+            <b>Количество</b>
+        </div>
+        <div class="ordersList">
+            <b>Цена</b>
+        </div>
+    </div>
+
+
+
+
+    <div>
+        <div class="delivery">
+            <span>Доставка: <b class="price">20грн.</b></span>
+        </div>
+    </div>
+
+    <div class="sum">
+        <div style="float:left;">
+            <span class="bonus"><b>+38 бонусов</b> за этот заказ</span>
+        </div>
+    </div>
+    <div style="text-align:right; padding-bottom:40px;">
+        <span>Сумма заказа: <b class="price">296грн.</b></span>
+    </div>
+</div>
