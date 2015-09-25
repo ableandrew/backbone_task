@@ -3,7 +3,7 @@ define (
     function($,_,Backbone, Books, BookView) {
         var app = app || {};
         app.BooksView = Backbone.View.extend({
-            el: '#orders',
+            el: '#bookOrders',
 
 
             initialize: function () {

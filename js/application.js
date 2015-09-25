@@ -2,12 +2,12 @@ define (
     ['jquery','underscore',"backbone","Order", "OrderList", "OrderView", "OrdersView", "Book", "Books", "BookView", 'BooksView'],
     function( $, _, Backbone, Order, OrderList,OrderView, OrdersView, Book, Books, BookView, BooksView ) {
 
+
         (function(){
 
             $.ajaxSetup({async: false});
             var data;
             var orders;
-            var books;
             $.getJSON("http://localhost:63342/project%20backbone/json/orders.json",data, function(result) {
                 orders = result;
             });
@@ -17,13 +17,22 @@ define (
 
 
 
+
+
+
+
+
             var coll = new OrderList(orders);
             var allOrders =  new OrdersView({collection:coll});
 
 
+            //console.log(books[1]);
+
 
             var coll1 = new Books(books);
-            var allBooks =  new BooksView({collection:coll1});
+           // var allBooks =  new BooksView({collection:coll1});
+
+
 
 
 

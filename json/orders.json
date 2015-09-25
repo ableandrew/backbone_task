@@ -1,6 +1,6 @@
     [
       {
-        "id":"001",
+        "id":"1",
         "orderId": "#0570",
         "date": "12.10.13",
         "state": "Canceled",
@@ -11,7 +11,7 @@
         "payment":"cash"
       },
       {
-        "id":"002",
+        "id":"2",
         "orderId": "#0571",
         "date": "15.10.13",
         "state":"Sent by courier",
@@ -22,7 +22,7 @@
         "payment":"cash"
       },
       {
-        "id":"003",
+        "id":"3",
         "orderId": "#0572",
         "date": "22.10.13",
         "state":"Delivered",
@@ -33,7 +33,7 @@
         "payment":"cash"
       },
       {
-        "id":"004",
+        "id":"4",
         "orderId": "#0573",
         "date": "30.10.13",
         "state":"Delivered",
