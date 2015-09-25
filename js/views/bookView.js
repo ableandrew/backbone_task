@@ -1,11 +1,11 @@
 define (
-    ['jquery','underscore','backbone', 'text!templates/bookview.html'],
-    function($, _,Backbone, bookTemplate) {
+    ['jquery','underscore','backbone', "handlebars", 'hbs!templates/bookview'],
+    function($, _,Backbone, handlebars, bookTemplate) {
 
         var app = app || {};
         app.BookView = Backbone.View.extend({
             tagName: 'div',
-            template: _.template(bookTemplate),
+            template: bookTemplate,
 
             initialize: function() {
             },

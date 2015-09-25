@@ -1,6 +1,6 @@
 define (
-    ['jquery','underscore',"backbone","Order", "OrderList", "OrderView", "OrdersView", "Book", "Books", "BookView"],
-    function( $, _, Backbone, Order, OrderList,OrderView, OrdersView, Book, Books, BookView ) {
+    ['jquery','underscore',"backbone","Order", "OrderList", "OrderView", "OrdersView", "Book", "Books", "BookView", 'BooksView'],
+    function( $, _, Backbone, Order, OrderList,OrderView, OrdersView, Book, Books, BookView, BooksView ) {
 
         (function(){
 
@@ -16,28 +16,14 @@ define (
             });
 
 
-           /* var obj = new Book({"id":"2","bookInOrder":"3"});
-            console.log(obj);
-            var view = new BookView({model:"obj"});
-            console.log(view.el);
-            console.log(view.$el);
-           // $("body").append(view.$el);
-
-            var obj1 = new Order({id:"21", orderId: "231", date: "141", state:"123",sprite:"235", name:"345", mobile:"245", delivery:"2345", payment:"2345"});
-            console.log(obj1);
-            var view1 = new OrderView({model:"obj1"});
-            console.log(view1.el);
-            console.log(view1.$el);
-           // $("body").append(view.$el);*/
-
-
-
-
 
             var coll = new OrderList(orders);
             var allOrders =  new OrdersView({collection:coll});
 
 
+
+            var coll1 = new Books(books);
+            var allBooks =  new BooksView({collection:coll1});
 
 
 

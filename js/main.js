@@ -1,9 +1,11 @@
 
 requirejs.config({
     paths: {
-        jquery: '../node_modules/jquery/dist/jquery',
-        underscore: '../node_modules/underscore/underscore',
-        backbone: '../node_modules/backbone/backbone',
+        jquery: '../lib/vendor/jquery/dist/jquery',
+        underscore: '../lib/vendor/underscore/underscore',
+        backbone: '../lib/vendor/backbone/backbone',
+        handlebars: "../lib/vendor/require-handlebars-plugin/hbs/handlebars.runtime",
+        hbs: '../lib/vendor/require-handlebars-plugin/hbs',
         Order: 'models/order',
         OrderList: "collection/orders",
         OrderView: "views/orderView",
@@ -11,9 +13,11 @@ requirejs.config({
         application: "application",
         Book: 'models/book',
         Books: 'collection/books',
-        BookView: "views/bookView"
+        BookView: "views/bookView",
+        BooksView: "views/booksView"
 
     }
+
 });
 
 require(

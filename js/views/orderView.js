@@ -1,11 +1,11 @@
 define (
-    ['jquery','underscore','backbone', 'text!templates/orderview.html'],
-    function($, _,Backbone, orderTemplate) {
+    ['jquery','underscore','backbone', "handlebars", 'hbs!templates/orderview'],
+    function($, _,Backbone,handlebars, orderTemplateHBS) {
 
         var app = app || {};
         app.OrderView = Backbone.View.extend({
             tagName: 'div',
-            template: _.template(orderTemplate),  //$('#item-template').html()
+            template: orderTemplateHBS,  //$('#item-template').html()
 
             events: {
                 "click #redStatus": "canceled",

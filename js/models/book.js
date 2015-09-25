@@ -5,8 +5,8 @@ define (
         var app = app || {};
         app.Book = Backbone.Model.extend({
             defaults: {
-                "id":"",
-                "bookInOrder":""
+                "id":""
+                //"bookInOrder":""
             }
 
 
