@@ -3,7 +3,9 @@ define (
     function($,_,Backbone, Books, BookView) {
         var app = app || {};
         app.BooksView = Backbone.View.extend({
-            el: '#bookOrders',
+            el: '.bookOrders',
+
+
 
 
             initialize: function () {
@@ -14,9 +16,16 @@ define (
                 this.collection.each(function(order) {
                     var bookView = new BookView({model: order});
                     this.$el.append(bookView.render().el);
+                    //console.log(this.el);
+
                 }, this);
                 return this;
+            },
+
+            getEl: function(){
+                return this.el;
             }
+
 
         });
 

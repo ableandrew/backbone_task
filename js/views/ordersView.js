@@ -17,16 +17,14 @@ define (
 
                     this.$el.append(orderView.render().el);
 
-                    console.log(books);
+                   // console.log(books);
                     var allCollection = new Books(books);
-                    console.log(allCollection);
+                   // console.log(allCollection);
 
                     var serializedCollection = allCollection.toJSON();
                     var filter = _.where(serializedCollection, {OrderId: order.get("id")});
-                    console.log(filter);
-                    _.each(filter, function (obj) {
-                        delete obj.id;
-                    });
+                    //console.log(filter);
+
 
                     /*var filter2 = allCollection.filter(function(book){
                         return book.get("OrderId") == order.get("id");
@@ -35,7 +33,7 @@ define (
 
 
                     var newCollection = new Books(filter);
-                    console.log(newCollection);
+                    //console.log(newCollection);
                     var idCollection =  new BooksView({collection:newCollection});
 
 
