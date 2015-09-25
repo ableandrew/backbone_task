@@ -1,6 +1,4 @@
-/**
- * Created by andrii.polishchuk on 9/22/2015.
- */
+
 requirejs.config({
     paths: {
         jquery: '../node_modules/jquery/dist/jquery',
@@ -10,8 +8,10 @@ requirejs.config({
         OrderList: "collection/orders",
         OrderView: "views/orderView",
         OrdersView: "views/ordersView",
-        application: "application"
-
+        application: "application",
+        Book: 'models/book',
+        Books: 'collection/books',
+        BookView: "views/bookView"
 
     }
 });

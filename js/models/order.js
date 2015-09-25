@@ -14,13 +14,8 @@ define (
                 mobile:"",
                 delivery:"",
                 payment:"",
-                order:{
-                    book:"",
-                    author:"",
-                    price:"",
-                    quantity:"",
-                    image:""
-                }
+                display:"close"
+
             }
 
 
