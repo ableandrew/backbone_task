@@ -15,25 +15,11 @@ define (
                 books = result;
             });
 
-
-
-
-
-
-
-
             var coll = new OrderList(orders);
             var allOrders =  new OrdersView({collection:coll});
 
 
-            //console.log(books[1]);
-
-
             var coll1 = new Books(books);
-           // var allBooks =  new BooksView({collection:coll1});
-
-
-
 
 
             function listStyle (idButton){
@@ -50,6 +36,7 @@ define (
                 var list = new OrderList(filter);
                 var allOrders =  new OrdersView({collection:list});
                 listStyle("all");
+                startAccordion();
             });
             $("#redStatus").on("click", function(){
                 $("#orders").empty();
@@ -57,6 +44,7 @@ define (
                 var canceledOrderList = new OrderList(filter);
                 var orders2 =  new OrdersView({collection:canceledOrderList});
                 listStyle("redStatus");
+                startAccordion();
             });
             $("#greenStatus").on("click", function(){
                 $("#orders").empty();
@@ -64,6 +52,7 @@ define (
                 var deliveredOrderList = new OrderList(filter);
                 var orders2 =  new OrdersView({collection:deliveredOrderList});
                 listStyle("greenStatus");
+                startAccordion();
             });
             $("#greyStatus").on("click", function(){
                 $("#orders").empty();
@@ -71,6 +60,7 @@ define (
                 var currentOrderList = new OrderList(filter);
                 var orders2 =  new OrdersView({collection:currentOrderList});
                 listStyle("greyStatus");
+                startAccordion();
             });
 
           function accordion (listId,orderId){
@@ -85,11 +75,13 @@ define (
               });
           }
 
-            accordion("#akk1","#1");
-            accordion("#akk2","#2");
-            accordion("#akk3","#3");
-            accordion("#akk4","#4");
-
+            var startAccordion = function() {
+                accordion("#akk1","#1");
+                accordion("#akk2","#2");
+                accordion("#akk3","#3");
+                accordion("#akk4","#4");
+            };
+            startAccordion();
 
         })();
     });
