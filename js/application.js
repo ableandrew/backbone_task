@@ -57,7 +57,6 @@ define (
                 var canceledOrderList = new OrderList(filter);
                 var orders2 =  new OrdersView({collection:canceledOrderList});
                 listStyle("redStatus");
-
             });
             $("#greenStatus").on("click", function(){
                 $("#orders").empty();
@@ -73,12 +72,6 @@ define (
                 var orders2 =  new OrdersView({collection:currentOrderList});
                 listStyle("greyStatus");
             });
-
-
-
-
-
-
 
 
         })();

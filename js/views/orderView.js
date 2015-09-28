@@ -4,8 +4,8 @@ define (
 
         var app = app || {};
         app.OrderView = Backbone.View.extend({
-            tagName: 'div',
-            template: orderTemplateHBS,  //$('#item-template').html()
+            tagName: 'li',
+            template: orderTemplateHBS,
 
             events: {
                 "click #redStatus": "canceled",
