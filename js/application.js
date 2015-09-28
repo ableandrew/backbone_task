@@ -73,6 +73,23 @@ define (
                 listStyle("greyStatus");
             });
 
+          function accordion (listId,orderId){
+              $(listId).on("click", function(){
+                  var obj = $(orderId);
+                  if (obj.css("display")=="none"){
+                      obj.css("display","");
+                  }
+                  else{
+                      obj.css("display","none");
+                  }
+              });
+          }
+
+            accordion("#akk1","#1");
+            accordion("#akk2","#2");
+            accordion("#akk3","#3");
+            accordion("#akk4","#4");
+
 
         })();
     });
