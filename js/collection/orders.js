@@ -5,6 +5,7 @@ define (
         var app = app || {};
         app.OrderList = Backbone.Collection.extend({
             model: Order,
+            url: 'http://localhost:63342/project%20backbone/json/orders.json',
 
             canceled: function(){
                 return this.filter(function(cancel){
@@ -21,12 +22,6 @@ define (
             current:function(){
                 return this.filter(function(current){
                     return current.get('state')==="Sent by courier";
-                })
-            },
-
-            all:function(){
-                return this.filter(function(){
-                    return true;
                 })
             }
 

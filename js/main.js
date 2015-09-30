@@ -14,8 +14,8 @@ requirejs.config({
         Book: 'models/book',
         Books: 'collection/books',
         BookView: "views/bookView",
-        BooksView: "views/booksView"
-
+        BooksView: "views/booksView",
+        HeaderView: "views/headerView"
     }
 
 });

@@ -4,8 +4,8 @@ define (
 
         var app = app || {};
         app.Books = Backbone.Collection.extend({
-            model: Book
-
+            model: Book,
+            url: 'http://localhost:63342/project%20backbone/json/books.json'
 
         });
 
